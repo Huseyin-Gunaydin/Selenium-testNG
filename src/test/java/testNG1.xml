@@ -1,0 +1,12 @@
+<suite name="Suite1" verbose="2">
+    <test name="testlerim">
+       <groups>
+           <run>
+               <include name="Grup C"/>
+           </run>
+       </groups>
+        <classes>
+            <class name="TestNG"/>
+        </classes>
+    </test>
+</suite>

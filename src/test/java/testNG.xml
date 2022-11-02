@@ -1,0 +1,11 @@
+<suite name="Suite1" verbose="2">
+    <test name="testlerim">
+        <classes>
+            <class name="TestNG">
+                    <methods>
+                        <exclude name="test3"/>
+                    </methods>
+             </class>
+        </classes>
+    </test>
+    </suite>

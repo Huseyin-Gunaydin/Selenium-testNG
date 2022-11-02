@@ -1,29 +1,23 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.bouncycastle.est.ESTAuth;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
 
-import java.sql.SQLOutput;
+import org.testng.annotations.Test;
 
 public class TestNG {
 
-
-    @Test
-    public void basariliMailTesti(){
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("http://www.google.com");
-        System.out.println("Basarili bir  mail testidir.");
-        driver.close();
+    @Test(groups = {"Grup A"})
+    public void test1(){
+        System.out.println("test1");
     }
-    @Test
-    public void basarilisizMailTesti(){
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
-        driver.get("http://www.google.com");
-        System.out.println("Basarisiz bir  mail testidir.");
-        driver.close();
+    @Test(groups = {"Grup B"})
+    public void test2(){
+        System.out.println("test2");
+    }
+    @Test(groups = {"Grup A", "Grup B" })
+    public void test3(){
+        System.out.println("test3");
+    }
+    @Test(groups = {"Grup C"})
+    public void test4(){
+        System.out.println("test4");
     }
 
 }
